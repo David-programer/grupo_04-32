@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-
-let URI = 'mongodb+srv://Test-admin:test-admin@clustertest.ezgdr.mongodb.net/creatibook?retryWrites=true&w=majority';
+const { URI } = require('./config');
 
 mongoose.connect(URI)
     .catch(err => console.log('Error' + err));
